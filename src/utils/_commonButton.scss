@@ -1,0 +1,46 @@
+@mixin common-button($color, $background-color) {
+    color: $color;
+    background-color: $background-color;
+    border: .1rem solid $background-color;
+
+    &:hover,
+    &.Button--active {
+        background-color: darken( $background-color, 10% );
+        border-color: darken( $background-color, 10% );
+        color: $color;
+        outline: 0;
+    }
+
+    &.Button--disabled,
+    &[disabled] {
+        opacity: .7;
+        cursor: default;
+
+        &:hover {
+            background-color: $background-color;
+            border-color: $background-color;
+            color: $color;
+        }
+    }
+
+    &.Button--transparent {
+        color: $background-color;
+        background-color: transparent;
+        border: 0 none;
+
+        &:hover,
+        &.Button--active {
+            color: darken( $background-color, 10% );
+        }
+
+        &.Button--disabled,
+        &[disabled] {
+
+            &:hover {
+                background-color: transparent;
+                border-color: transparent;
+                color: $background-color;
+            }
+        }
+    }
+}

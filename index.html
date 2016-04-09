@@ -1,0 +1,459 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.css"/>
+		<link rel="stylesheet" href="./dist/crispy-bacon.min.css"/>
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+	</head>
+	<style>
+		pre > code {
+		    white-space: pre;
+		    margin-top: -3rem;
+		    display: block;
+		}
+		.Grids__Panel {
+			text-align: center;
+		}
+		.Navbar {
+			border-radius: 0;
+			position: fixed;
+			width: 100%;
+			z-index: 1;
+		}
+		.Navbar__Menu {
+			display: flex;
+		}
+		.Section {
+			padding-top: 90px;
+		}
+	</style>
+	<body>
+		<!-- Navbar -->
+		<div class="Panel Panel--primary Navbar">
+			<div class="Grid Grid--gutters Grid--between">
+				<h1 class="Grid__Cell">Crispy Bacon</h1>
+				<div class="Grid__Cell Navbar__Menu">
+					<div class="Menu Menu--horizontal Menu--transparent Menu--inverted">
+						<a href="#buttons" class="Menu__Item">Buttons</a>
+						<a href="#fields" class="Menu__Item">Fields</a>
+						<a href="#grids" class="Menu__Item">Grids</a>
+						<a href="#menus" class="Menu__Item">Menus</a>
+						<a href="#panels" class="Menu__Item">Panels</a>
+						<a href="#typography" class="Menu__Item">Typography</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Buttons -->
+		<div id="buttons" class="Grid Grid--gutters Section">
+
+			<h2>Buttons</h2>
+
+			<h3>Basic</h3>
+
+			<div class="Grid__Cell">
+				<button class="Button">Default button</button>
+			</div>
+			<div class="Grid__Cell">
+				<a href="#" class="Button Button--primary">Primary button</a>
+			</div>
+			<div class="Grid__Cell">
+				<input type="button" class="Button Button--secondary" value="Secondary button">
+			</div>
+			<div class="Grid__Cell">
+				<button disabled class="Button">Disabled button</button>
+			</div>
+
+			<h3>Transparent</h3>
+
+			<div class="Grid__Cell">
+				<button class="Button Button--transparent">Default button</button>
+			</div>
+			<div class="Grid__Cell">
+				<a href="#" class="Button Button--primary Button--transparent">Primary button</a>
+			</div>
+			<div class="Grid__Cell">
+				<input type="button" class="Button Button--secondary Button--transparent" value="Secondary button">
+			</div>
+			<div class="Grid__Cell">
+				<button disabled class="Button Button--transparent">Disabled button</button>
+			</div>
+
+			<h3>Markup</h3>
+
+			<div class="Grid__Cell Grid__Cell Grid__Cell--small-12 Grid__Cell--medium-12 Grid__Cell--large-12">
+				<pre>
+					<code class="prettyprint lang-html">
+						<!-- Basic -->
+						<button class="Button">Default button</button>
+						<a href="#" class="Button Button--primary">Primary button</a>
+						<input type="button" class="Button Button--secondary" value="Secondary button">
+						<button disabled class="Button">Disabled button</button>
+
+						<!-- Transparent -->
+						<button class="Button Button--transparent">Default button</button>
+						<a href="#" class="Button Button--primary Button--transparent">Primary button</a>
+						<input type="button" class="Button Button--secondary Button--transparent" value="Secondary button">
+						<button disabled class="Button Button--transparent">Disabled button</button>
+					</code>
+				</pre>
+			</div>
+
+		</div>
+
+		<!-- Fields -->
+		<div id="fields" class="Grid Grid--gutters Section">
+
+			<h2>Fields</h2>
+
+			<h3>Form example</h3>
+
+			<div class="Grid__Cell Grid__Cell--small-12 Grid__Cell--large-3">
+				<div class="Field">
+					<label for="name">Name</label>
+					<input id="name" type="text" placeholder="Name..." required />
+				</div>
+			</div>
+
+			<div class="Grid__Cell Grid__Cell--small-12 Grid__Cell--large-3">
+				<div class="Field">
+					<label for="email">Email</label>
+					<input id="email" type="email" placeholder="Email..." required />
+				</div>
+			</div>
+
+			<div class="Grid__Cell Grid__Cell--small-12 Grid__Cell--large-3">
+				<div class="Field">
+					<label for="object">Object</label>
+					<select id="object">
+						<option value="" class="" selected disabled></option>
+						<option value="1" class="">Request for information</option>
+						<option value="2" class="">Problem with products</option>
+						<option value="3" class="">Other</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="Grid__Cell Grid__Cell--small-12">
+				<div class="Field">
+					<label for="message">Message</label>
+					<textarea id="message" placeholder="Message..." required></textarea>
+				</div>
+			</div>
+
+			<div class="Grid__Cell Grid__Cell--small-12">
+				<div class="Field">
+					<label>Newsletter</label>
+					<input id="newsletter" type="checkbox" />
+					<label for="newsletter">Suscribe to the newsletter ?</label>
+				</div>
+			</div>
+
+			<div class="Grid__Cell Grid__Cell--small-12">
+				<div class="Field">
+					<label for="copy">Receive a copy of this message ?</label>
+					<div class="Field">
+						<input id="copy-1" name="copy" value="1" type="radio" checked />
+						<label for="copy-1">Yes</label>
+					</div>
+					<div class="Field">
+						<input id="copy-2" name="copy" value="2" type="radio" />
+						<label for="copy-2">No</label>
+					</div>
+				</div>
+			</div>
+
+			<h3>Errors</h3>
+
+			<div class="Grid__Cell Grid__Cell--small-12 Grid__Cell--large-3">
+				<div class="Field Field--has-error">
+					<label for="name">Password</label>
+					<input id="name" type="password" value="Bad" required />
+					<small class="Field__Error">The password should be longer than 6 characters</small>
+					<small class="Field__Error">The password should contain at least one digit and one letter</small>
+				</div>
+			</div>
+
+			<h2>Markup</h2>
+
+			<div class="Grid__Cell Grid__Cell Grid__Cell--small-12 Grid__Cell--medium-12 Grid__Cell--large-12">
+				<pre>
+					<code class="prettyprint lang-html">
+						<!-- Form example -->
+
+						<div class="Field">
+							<label for="name">Name</label>
+							<input id="name" type="text" placeholder="Name..." required />
+						</div>
+
+						<div class="Field">
+							<label for="email">Email</label>
+							<input id="email" type="email" placeholder="Email..." required />
+						</div>
+
+						<div class="Field">
+							<label for="object">Object</label>
+							<select id="object">
+								<option value="" class="" selected disabled></option>
+								<option value="1" class="">Request for information</option>
+								<option value="2" class="">Problem with products</option>
+								<option value="3" class="">Other</option>
+							</select>
+						</div>
+
+						<div class="Field">
+							<label for="message">Message</label>
+							<textarea id="message" placeholder="Message..." required></textarea>
+						</div>
+
+						<div class="Field">
+							<label>Newsletter</label>
+							<input id="newsletter" type="checkbox" />
+							<label for="newsletter">Suscribe to the newsletter ?</label>
+						</div>
+
+						<div class="Field">
+							<label for="copy">Receive a copy of this message ?</label>
+							<div class="Field">
+								<input id="copy-1" name="copy" value="1" type="radio" checked />
+								<label for="copy-1">Yes</label>
+							</div>
+							<div class="Field">
+								<input id="copy-2" name="copy" value="2" type="radio" />
+								<label for="copy-2">No</label>
+							</div>
+						</div>
+
+						<!-- Errors -->
+
+						<div class="Field Field--has-error">
+							<label for="name">Password</label>
+							<input id="name" type="password" value="Bad" required />
+							<small class="Field__Error">The password should be longer than 6 characters</small>
+							<small class="Field__Error">The password should contain at least one digit and one letter</small>
+						</div>
+
+					</code>
+				</pre>
+			</div>
+
+		</div>
+
+		<!-- Grids -->
+		<div id="grids" class="Grid Grid--gutters Section">
+
+			<h2>Grids</h2>
+
+			<div class="Grid__Cell Grid__Cell--small-12 Grid__Cell--medium-4 Grid__Cell--large-3">
+				<div class="Panel Panel--default Grids__Panel">
+					Grid__Cell Grid__Cell--small-12 Grid__Cell--medium-4 Grid__Cell--large-3
+				</div>
+			</div>
+			<div class="Grid__Cell Grid__Cell--small-12 Grid__Cell--medium-4 Grid__Cell--large-6">
+				<div class="Panel Panel--default Grids__Panel">
+					Grid__Cell Grid__Cell--small-12 Grid__Cell--medium-4 Grid__Cell--large-6
+				</div>
+			</div>
+			<div class="Grid__Cell Grid__Cell--small-12 Grid__Cell--medium-4 Grid__Cell--large-3">
+				<div class="Panel Panel--default Grids__Panel">
+					Grid__Cell Grid__Cell--small-12 Grid__Cell--medium-4 Grid__Cell--large-3
+				</div>
+			</div>
+			<div class="Grid__Cell Grid__Cell--small-12 Grid__Cell--medium-6 Grid__Cell--large-4">
+				<div class="Panel Panel--default Grids__Panel">
+					Grid__Cell Grid__Cell--small-12 Grid__Cell--medium-6 Grid__Cell--large-4
+				</div>
+			</div>
+			<div class="Grid__Cell Grid__Cell--small-12 Grid__Cell--medium-6 Grid__Cell--large-4">
+				<div class="Panel Panel--default Grids__Panel">
+					Grid__Cell Grid__Cell--small-12 Grid__Cell--medium-6 Grid__Cell--large-4
+				</div>
+			</div>
+			<div class="Grid__Cell Grid__Cell--small-12 Grid__Cell--medium-12 Grid__Cell--large-4">
+				<div class="Panel Panel--default Grids__Panel">
+					Grid__Cell Grid__Cell--small-12 Grid__Cell--medium-12 Grid__Cell--large-4
+				</div>
+			</div>
+
+			<h3>Markup</h3>
+
+			<div class="Grid__Cell Grid__Cell Grid__Cell--small-12 Grid__Cell--medium-12 Grid__Cell--large-12">
+				<pre>
+					<code class="prettyprint lang-html">
+						<div class="Grid Grid--gutters">
+							<div class="Grid__Cell Grid__Cell--small-12 Grid__Cell--medium-4 Grid__Cell--large-3">
+								<div class="Panel Panel--default Grids__Panel">
+									Grid__Cell Grid__Cell--small-12 Grid__Cell--medium-4 Grid__Cell--large-3
+								</div>
+							</div>
+							<div class="Grid__Cell Grid__Cell--small-12 Grid__Cell--medium-4 Grid__Cell--large-6">
+								<div class="Panel Panel--default Grids__Panel">
+									Grid__Cell Grid__Cell--small-12 Grid__Cell--medium-4 Grid__Cell--large-6
+								</div>
+							</div>
+							<div class="Grid__Cell Grid__Cell--small-12 Grid__Cell--medium-4 Grid__Cell--large-3">
+								<div class="Panel Panel--default Grids__Panel">
+									Grid__Cell Grid__Cell--small-12 Grid__Cell--medium-4 Grid__Cell--large-3
+								</div>
+							</div>
+							<div class="Grid__Cell Grid__Cell--small-12 Grid__Cell--medium-6 Grid__Cell--large-4">
+								<div class="Panel Panel--default Grids__Panel">
+									Grid__Cell Grid__Cell--small-12 Grid__Cell--medium-6 Grid__Cell--large-4
+								</div>
+							</div>
+							<div class="Grid__Cell Grid__Cell--small-12 Grid__Cell--medium-6 Grid__Cell--large-4">
+								<div class="Panel Panel--default Grids__Panel">
+									Grid__Cell Grid__Cell--small-12 Grid__Cell--medium-6 Grid__Cell--large-4
+								</div>
+							</div>
+							<div class="Grid__Cell Grid__Cell--small-12 Grid__Cell--medium-12 Grid__Cell--large-4">
+								<div class="Panel Panel--default Grids__Panel">
+									Grid__Cell Grid__Cell--small-12 Grid__Cell--medium-12 Grid__Cell--large-4
+								</div>
+							</div>
+						</div>
+					</code>
+				</pre>
+			</div>
+
+		</div>
+
+		<div id="menus" class="Grid Grid--gutters Section">
+
+			<h2>Menus</h2>
+
+			<h3>Basic</h3>
+
+			<div class="Grid__Cell">
+				<div class="Menu Menu--vertical">
+					<a href="#" class="Menu__Item">Menu 1</a>
+					<a href="#" class="Menu__Item">Menu 2</a>
+					<a href="#" class="Menu__Item">Menu 3</a>
+				</div>
+			</div>
+
+			<div class="Grid__Cell">
+				<div class="Menu Menu--horizontal">
+					<a href="#" class="Menu__Item">Menu 1</a>
+					<a href="#" class="Menu__Item">Menu 2</a>
+					<a href="#" class="Menu__Item">Menu 3</a>
+				</div>
+			</div>
+
+			<h3>Inverted</h3>
+
+			<div class="Grid__Cell">
+				<div class="Menu Menu--vertical Menu--inverted Panel Panel--primary">
+					<a href="#" class="Menu__Item">Menu 1</a>
+					<a href="#" class="Menu__Item">Menu 2</a>
+					<a href="#" class="Menu__Item">Menu 3</a>
+				</div>
+			</div>
+
+			<div class="Grid__Cell">
+				<div class="Menu Menu--horizontal Menu--inverted Panel Panel--secondary">
+					<a href="#" class="Menu__Item">Menu 1</a>
+					<a href="#" class="Menu__Item">Menu 2</a>
+					<a href="#" class="Menu__Item">Menu 3</a>
+				</div>
+			</div>
+
+			<h3>Markup</h3>
+
+			<div class="Grid__Cell Grid__Cell Grid__Cell--small-12 Grid__Cell--medium-12 Grid__Cell--large-12">
+				<pre>
+					<code class="prettyprint lang-html">
+						<!-- Basic -->
+						<div class="Menu Menu--vertical">
+							<a href="#" class="Menu__Item">Menu 1</a>
+							<a href="#" class="Menu__Item">Menu 2</a>
+							<a href="#" class="Menu__Item">Menu 3</a>
+						</div>
+						<div class="Menu Menu--horizontal">
+							<a href="#" class="Menu__Item">Menu 1</a>
+							<a href="#" class="Menu__Item">Menu 2</a>
+							<a href="#" class="Menu__Item">Menu 3</a>
+						</div>
+
+						<!-- Inverted -->
+						<div class="Menu Menu--vertical Menu--inverted Panel Panel--primary">
+							<a href="#" class="Menu__Item">Menu 1</a>
+							<a href="#" class="Menu__Item">Menu 2</a>
+							<a href="#" class="Menu__Item">Menu 3</a>
+						</div>
+						<div class="Menu Menu--horizontal Menu--inverted Panel Panel--secondary">
+							<a href="#" class="Menu__Item">Menu 1</a>
+							<a href="#" class="Menu__Item">Menu 2</a>
+							<a href="#" class="Menu__Item">Menu 3</a>
+						</div>
+					</code>
+				</pre>
+			</div>
+
+		</div>
+
+		<!-- Panels -->
+		<div id="panels" class="Grid Grid--gutters Section">
+
+			<h2>Panels</h2>
+
+			<div class="Grid__Cell Grid__Cell--large-3">
+				<div class="Panel">This is a panel</div>
+			</div>
+			<div class="Grid__Cell Grid__Cell--large-3">
+				<div class="Panel Panel--default">This is a default panel</div>
+			</div>
+			<div class="Grid__Cell Grid__Cell--large-3">
+				<div class="Panel Panel--primary">This is a primary panel</div>
+			</div>
+			<div class="Grid__Cell Grid__Cell--large-3">
+				<div class="Panel Panel--secondary">This is a secondary panel</div>
+			</div>
+
+			<h3>Markup</h3>
+
+			<div class="Grid__Cell Grid__Cell Grid__Cell--small-12 Grid__Cell--medium-12 Grid__Cell--large-12">
+				<pre>
+					<code class="prettyprint lang-html">
+						<div class="Panel">This is a panel</div>
+						<div class="Panel Panel--default">This is a default panel</div>
+						<div class="Panel Panel--primary">This is a primary panel</div>
+						<div class="Panel Panel--secondary">This is a secondary panel</div>
+					</code>
+				</pre>
+			</div>
+
+		</div>
+
+		<!-- Typography -->
+		<div id="typography" class="Grid Grid--gutters Section">
+
+			<h2>Typography</h2>
+
+			<!-- Base font-size and line-height -->
+			<p>The base type is 1.6rem (16px) over 1.6 line height (24px)</p>
+
+			<!-- Default Headings -->
+			<h1>Heading 1</h1>
+			<h2>Heading 2</h2>
+			<h3>Heading 3</h3>
+			<h4>Heading 4</h4>
+			<h5>Heading 5</h5>
+			<h6>Heading 6</h6>
+
+		</div>
+
+		<script>
+			var codes = document.querySelectorAll('.prettyprint'),
+				escapes = { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': '&quot;', "'": '&#39;', "/": '&#x2F;' };
+			for (var i = 0; i < codes.length; i++) codes[i].innerHTML = escapeHtml(codes[i].innerHTML.replace(/\t{6}/g, ''));
+
+			function escapeHtml(string) {
+				return String(string).replace(/[&<>"'\/]/g, function(s) {
+					return escapes[s];
+				});
+			}
+		</script>
+		<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+	</body>
+</html>

@@ -1,0 +1,19 @@
+.Panel {
+    overflow: hidden;
+    border-radius: .2rem;
+}
+
+.Panel--default {
+	color: $color-initial;
+	background-color: $color-default;
+}
+
+.Panel--primary {
+	color: $color-initial;
+	background-color: $color-primary;
+}
+
+.Panel--secondary {
+	color: $color-initial;
+	background-color: $color-secondary;
+}

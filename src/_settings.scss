@@ -1,0 +1,16 @@
+/* Colors */
+$color-initial: #fff !default
+$color-default: #ccc !default
+$color-primary: #ec7865 !default
+$color-secondary: #5f4f4f !default
+$color-error: #fe0101 !default
+
+/* Media Queries */
+$breakpoint-small: 40.0rem !default
+$breakpoint-medium: 80.0rem !default
+$breakpoint-large: 120.0rem !default
+
+/* Grids */
+$grid-size: 12 !default
+$grid-max-width: $breakpoint-large !default
+$grid-gutter: 0.5rem !default

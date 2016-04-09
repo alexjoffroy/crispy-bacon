@@ -1,0 +1,21 @@
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+
+body {
+	color: $color-secondary;
+	font-family: 'Lato', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+	font-size: 1.6em;
+	font-weight: 300;
+	line-height: 1.6;
+	letter-spacing: .01em;
+}
+
+*,
+*:after,
+*:before {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
