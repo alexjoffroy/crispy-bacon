@@ -1,13 +1,14 @@
 /* Colors */
 /* Media Queries */
 /* Grids */
+/* Fonts */
 html {
   font-size: 62.5%;
   box-sizing: border-box; }
 
 body {
   color: #5f4f4f;
-  font-family: 'Lato', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 1.6em;
   font-weight: 300;
   line-height: 1.6;
@@ -504,7 +505,6 @@ h6 {
             flex-basis: 100%;
     max-width: 100%; } }
 
-/* Menus */
 .Menu {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -558,7 +558,6 @@ h6 {
   .Menu--inverted .Menu__Item:hover {
     color: #d9d9d9; }
 
-/* Panels */
 .Panel {
   overflow: hidden;
   border-radius: .2rem; }

@@ -1,7 +1,7 @@
 {
   "name": "crispy-bacon",
   "version": "0.1.0",
-  "description": "A small CSS framework",
+  "description": "A small and tasty CSS framework",
   "main": "dist/crispy-bacon.css",
   "scripts": {
     "dist": "gulp dist",
@@ -9,7 +9,7 @@
   },
   "keywords": [
     "CSS",
-    "Sass",
+    "SASS",
     "UI",
     "bacon"
   ],
