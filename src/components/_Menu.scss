@@ -4,31 +4,32 @@
   justify-content: center;
   margin: 0;
   list-style: none;
-  border-radius: .2rem;
+  border-radius: $menu-border-radius;
 
   .Menu__Item {
-    color: $color-secondary;
+    color: $menu-item-color;
+    font-family: $menu-item-font-family;
+    font-size: $menu-item-font-size;
+    font-weight: $menu-item-font-weight;
+    height: $menu-item-height;
+    padding: $menu-item-padding;
     appearance: none;
     cursor: pointer;
-    font-size: 1.4rem;
-    font-weight: 400;
-    height: 3.8rem;
     letter-spacing: .1rem;
     line-height: 3.8rem;
-    padding: 0 $grid-gutter;
     text-align: center;
     text-decoration: none;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    box-shadow: none; 
+    box-shadow: none;
 
     &:focus {
-      outline: 0; 
+      outline: 0;
     }
 
     &:hover {
-      color: darken( $color-secondary, 15% );
+      color: darken( $menu-item-color, 15% );
     }
 
   }
@@ -51,10 +52,10 @@
 .Menu--inverted {
 
   .Menu__Item {
-    color: $color-initial;
+    color: $menu-item-inverted-color;
 
     &:hover {
-      color: darken( $color-initial, 15% );
+      color: darken( $menu-item-inverted-color, 15% );
     }
 
   }

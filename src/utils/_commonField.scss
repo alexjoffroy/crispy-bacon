@@ -1,19 +1,19 @@
 @mixin common-field-input() {
-  font-family: Lato;
-  font-weight: 700;
+	color: $field-text-color;
+	background-color: $field-background-color;
+	font-family: $field-font-family;
+	font-size: $field-font-size;
+	font-weight: $field-font-weight;
+	height: $field-height;
+	width: $field-width;
+	padding: $field-padding;
+	border: $field-border-width solid $field-border-color;
+	border-radius: $field-border-radius;
 	appearance: none;
-	color: $color-secondary;
-	background-color: $color-initial;
-	border: .1rem solid $color-default;
-	border-radius: .2rem;
 	box-shadow: none;
-	height: 3.8rem;
-	padding: .6rem 1.0rem;
-	width: 100%;
 
 	&:focus {
-		border: .1rem solid $color-primary;
+		border: $field-border-width solid $field-focus-border-color;
 		outline: 0;
 	}
 }
- 

@@ -1,19 +1,88 @@
-/* Colors */
-$color-initial: #fff !default
-$color-default: #ccc !default
-$color-primary: #ec7865 !default
-$color-secondary: #5f4f4f !default
-$color-error: #fe0101 !default
+// 1 - Global
+$global-initial-color: #fff !default
+$global-default-color: #ccc !default
+$global-primary-color: #ec7865 !default
+$global-secondary-color: #5f4f4f !default
+$global-error-color: #fe0101 !default
+$global-font-family: 'Roboto', 'Arial', sans-serif !default
+$global-font-size: 1.6rem !default
+$global-font-weight: 300 !default
+$global-line-height: 1.6 !default
+$global-border-radius: 0.2rem !default
 
-/* Media Queries */
-$breakpoint-small: 40.0rem !default
-$breakpoint-medium: 80.0rem !default
-$breakpoint-large: 120.0rem !default
+// 2 - Typography
+$typo-heading-font-weight: $global-font-weight !default
+$typo-heading-line-height: $global-line-height !default
+$typo-heading-font-sizes: (
+	'h1': 3.6rem,
+	'h2': 3.0rem,
+	'h3': 2.4rem,
+	'h4': 1.8rem,
+	'h5': 1.6rem,
+	'h6': 1.4rem
+) !default
+$typo-heading-margin: 0.5rem 0 !default
 
-/* Grids */
+// 3 - Media queries
+$mq-breakpoint-small: 40.0rem !default
+$mq-breakpoint-medium: 80.0rem !default
+$mq-breakpoint-large: 120.0rem !default
+
+// 4 - Grids
 $grid-size: 12 !default
-$grid-max-width: $breakpoint-large !default
+$grid-max-width: $mq-breakpoint-large !default
 $grid-gutter: 0.5rem !default
 
-/* Fonts */
-$font-family: 'Roboto' !default
+// 5 - Buttons
+$button-text-color: $global-initial-color !default
+$button-default-color: $global-default-color !default
+$button-primary-color: $global-primary-color !default
+$button-secondary-color: $global-secondary-color !default
+$button-font-family: $global-font-family !default
+$button-font-size: 1.1rem !default
+$button-font-weight: 700 !default
+$button-height: 3.8rem !default
+$button-padding: 0 3rem !default
+$button-border-width: 0.1rem !default
+$button-border-radius: $global-border-radius !default
+
+// 6 - Fields
+$field-text-color: $global-secondary-color !default
+$field-background-color: $global-initial-color !default
+$field-font-family: $global-font-family !default
+$field-font-size: $global-font-size !default
+$field-font-weight: $global-font-weight !default
+$field-height: 3.8rem !default
+$field-width: 100% !default
+$field-padding: 0.6rem 1.0rem !default
+$field-border-width: 0.1rem !default
+$field-border-color: $global-default-color !default
+$field-border-radius: $global-border-radius !default
+$field-focus-border-color: $global-primary-color !default
+$field-label-font-family: $global-font-family !default
+$field-label-font-size: $global-font-size !default
+$field-label-font-weight: 700 !default
+$field-label-margin: 0.5rem !default
+$field-select-text-color: $field-text-color !default
+$field-select-background-color: $field-background-color !default
+$field-textarea-min-height: 10rem !default
+$field-error-color: $global-error-color !default
+
+// 7 - Menus
+$menu-border-radius: $global-border-radius !default
+$menu-item-color: $global-secondary-color !default
+$menu-item-inverted-color: $global-initial-color !default
+$menu-item-font-family: $global-font-family !default
+$menu-item-font-size: 1.4rem !default
+$menu-item-font-weight: 400 !default
+$menu-item-height: 3.8rem !default
+$menu-item-padding: 0 $grid-gutter !default
+
+// 8 - Panels
+$panel-default-color: $global-initial-color !default
+$panel-default-background-color: $global-default-color !default
+$panel-primary-color: $global-initial-color !default
+$panel-primary-background-color: $global-primary-color !default
+$panel-secondary-color: $global-initial-color !default
+$panel-secondary-background-color: $global-secondary-color !default
+$panel-border-radius: $global-border-radius !default

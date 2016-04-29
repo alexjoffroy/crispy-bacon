@@ -1,26 +1,27 @@
 .Button {
-	border-radius: .2rem;
+	font-family: $button-font-family;
+	font-size: $button-font-size;
+	font-weight: $button-font-weight;
+	border-radius: $button-border-radius;
 	cursor: pointer;
 	display: inline-block;
-	font-size: 1.1rem;
-	font-weight: 700;
-	height: 3.8rem;
+	height: $button-height;
 	letter-spacing: .1rem;
-	line-height: 3.8rem;
-	padding: 0 3.0rem;
+	line-height: $button-height;
+	padding: $button-padding;
 	overflow: hidden;
 	text-align: center;
 	text-decoration: none;
 	text-overflow: ellipsis;
 	text-transform: uppercase;
 	white-space: nowrap;
-    @include common-button($color-initial, $color-default);
+    @include common-button($button-text-color, $button-default-color);
 }
 
 .Button--primary {
-    @include common-button($color-initial, $color-primary);
+    @include common-button($button-text-color, $button-primary-color);
 }
 
 .Button--secondary {
-    @include common-button($color-initial, $color-secondary);
+    @include common-button($button-text-color, $button-secondary-color);
 }

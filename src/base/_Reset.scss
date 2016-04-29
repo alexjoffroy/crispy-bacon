@@ -4,11 +4,11 @@ html {
 }
 
 body {
-	color: $color-secondary;
-	font-family: $font-family, 'Arial', sans-serif;
-	font-size: 1.6em;
-	font-weight: 300;
-	line-height: 1.6;
+	color: $global-secondary-color;
+	font-family: $global-font-family;
+	font-size: $global-font-size;
+	font-weight: $global-font-weight;
+	line-height: $global-line-height;
 	letter-spacing: .01em;
 }
 
