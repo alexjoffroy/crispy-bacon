@@ -51,13 +51,22 @@
 }
 
 @for $i from 1 through $grid-size {
-  .Grid__Cell--small-#{$i} {
+  .Grid__Cell--xsmall-#{$i} {
     flex-basis: percentage($i/$grid-size);
     max-width: percentage($i/$grid-size);
   }
 }
 
-@media (min-width: $mq-breakpoint-small) and (max-width: $mq-breakpoint-medium) {
+@media only screen and (min-width: $mq-breakpoint-xsmall) {
+  @for $i from 1 through $grid-size {
+    .Grid__Cell--small-#{$i} {
+      flex-basis: percentage($i/$grid-size);
+      max-width: percentage($i/$grid-size);
+    }
+  }
+}
+
+@media only screen and (min-width: $mq-breakpoint-small) {
   @for $i from 1 through $grid-size {
     .Grid__Cell--medium-#{$i} {
       flex-basis: percentage($i/$grid-size);
@@ -66,7 +75,7 @@
   }
 }
 
-@media (min-width: $mq-breakpoint-medium) {
+@media only screen and (min-width: $mq-breakpoint-medium) {
   @for $i from 1 through $grid-size {
     .Grid__Cell--large-#{$i} {
       flex-basis: percentage($i/$grid-size);

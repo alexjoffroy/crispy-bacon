@@ -5,7 +5,7 @@
   margin: 0;
   list-style: none;
   border-radius: $menu-border-radius;
-
+}
   .Menu__Item {
     color: $menu-item-color;
     font-family: $menu-item-font-family;
@@ -34,7 +34,7 @@
 
   }
 
-}
+
 
 .Menu--horizontal {
   flex-direction: row;

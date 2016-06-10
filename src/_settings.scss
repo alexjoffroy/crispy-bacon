@@ -24,7 +24,8 @@ $typo-heading-font-sizes: (
 $typo-heading-margin: 0.5rem 0 !default
 
 // 3 - Media queries
-$mq-breakpoint-small: 40.0rem !default
+$mq-breakpoint-xsmall: 40.0rem !default
+$mq-breakpoint-small: 60.0rem !default
 $mq-breakpoint-medium: 80.0rem !default
 $mq-breakpoint-large: 120.0rem !default
 
@@ -65,7 +66,7 @@ $field-label-font-weight: 700 !default
 $field-label-margin: 0.5rem !default
 $field-select-text-color: $field-text-color !default
 $field-select-background-color: $field-background-color !default
-$field-textarea-min-height: 10rem !default
+$field-textarea-min-height: 20rem !default
 $field-error-color: $global-error-color !default
 
 // 7 - Menus

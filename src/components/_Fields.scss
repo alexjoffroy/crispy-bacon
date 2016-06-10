@@ -39,7 +39,7 @@
 
 	textarea {
 		@include common-field-input();
-		min-height: 10rem;
+		min-height: $field-textarea-min-height;
 		height: auto;
 		resize: none;
 		overflow: auto;

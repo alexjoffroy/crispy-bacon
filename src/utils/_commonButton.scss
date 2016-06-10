@@ -2,6 +2,7 @@
     color: $color;
     background-color: $background-color;
     border: .1rem solid $background-color;
+    transition: background-color .3s;
 
     &:hover,
     &.Button--active {
